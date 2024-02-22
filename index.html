@@ -15,10 +15,13 @@
 </head>
 
 <body>
+    <!-- navigation bar -->
     <header>
+        <!-- Logo and home link -->
         <div class="logo">
             <h1><a href="/index.html">Nat Bitton</a></h1>
         </div>
+        <!-- Navigation menu -->
         <nav class="nav">
             <ul class="navlist">
                 <li><a href="index.html">Home</a></li>
@@ -26,11 +29,14 @@
                 <li><a href="#favorite-links">Links</a></li>
                 <li><a href="#quote">Quote</a></li>
                 <li><a href="#top-ten-list">Artists</a></li>
+                <li><a href="#top-ten-list">Gallery</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main content area -->
     <main>
+        <!-- Personal information section -->
         <section id="personal-info">
             <div class="personal-info-content">
                 <h1 class="logo">
@@ -74,6 +80,7 @@
             </div>
         </section>
 
+        <!-- Hobbies section with image gallery -->
         <section id="hobbies">
             <div class="hobby-conatiner">
                 <h2>Hobbies</h2>
@@ -83,41 +90,59 @@
             <div>
                 <div class="img-row">
                     <div class="img-contain">
-                        <img src="/img/ice-hockey.jpg" alt="hockey" title="Hockey">
+                        <img src="./img/ice-hockey.jpg" alt="hockey" title="Hockey">
                         <p>Hockey</p>
                     </div>
                     <div class="img-contain">
-                        <img src="/img/coding.jpg" alt="coding" title="Coding">
+                        <img src="./img/coding.jpg" alt="coding" title="Coding">
                         <p>Coding - Programming</p>
                     </div>
                     <div class="img-contain">
-                        <img src="/img/fortnite.webp" alt="fortnite" title="Fortnite">
+                        <img src="./img/fortnite.webp" alt="fortnite" title="Fortnite">
                         <p>Gaming & Fortnite</p>
 
                     </div>
                 </div>
             </div>
         </section>
+
+        <!-- Favorite links section -->
         <section id="favorite-links">
             <h2>Favorite Links</h2>
             <p>Here are some of my favorite links on the web</p>
             <ul>
-                <a target="_blank" href="https://www.vaniercollege.qc.ca/computer-science-technology/"><li>Visit Vanier College, a great place to learn.</li></a>
-                <a target="_blank" href="https://www.twitch.tv/"><li>Twitch TV, a great place to watch streamers play your favourite game.</li></a>
-                <a target="_blank" href="https://open.spotify.com/?"><li>Spotify, a great place to Listen to music</li></a>
-                <a target="_blank" href="https://chat.openai.com/"><li>ChatGPT, a great homework helper</li></a>
-                <a target="_blank" href="https://www.netflix.com/browse"><li>Netflix, a great place to watch some great Movies & TV Series</li></a>
-               <a target="_blank" href="https://store.epicgames.com/en-US/"><li>Epic Games, a great place to download and play some great games</li></a>
+                <a target="_blank" href="https://www.vaniercollege.qc.ca/computer-science-technology/">
+                    <li>Visit Vanier College, a great place to learn.</li>
+                </a>
+                <a target="_blank" href="https://www.twitch.tv/">
+                    <li>Twitch TV, a great place to watch streamers play your favourite game.</li>
+                </a>
+                <a target="_blank" href="https://open.spotify.com/?">
+                    <li>Spotify, a great place to Listen to music</li>
+                </a>
+                <a target="_blank" href="https://chat.openai.com/">
+                    <li>ChatGPT, a great homework helper</li>
+                </a>
+                <a target="_blank" href="https://www.netflix.com/browse">
+                    <li>Netflix, a great place to watch some great Movies & TV Series</li>
+                </a>
+                <a target="_blank" href="https://store.epicgames.com/en-US/">
+                    <li>Epic Games, a great place to download and play some great games</li>
+                </a>
             </ul>
         </section>
+
+        <!-- Favorite quote section -->
         <section id="quote">
             <h2>My favourite quote</h2>
             <blockquote>
                 "Everybody has goals, aspirations or whatever, and everybody has been at a point in their life where
                 <br>nobody believed in them".
-            <cite>-eminem</cite>
+                <cite>-eminem</cite>
             </blockquote>
         </section>
+
+        <!-- Top ten favorite artists list -->
         <section id="top-ten-list">
             <h2>Top Ten Favorite Artists</h2>
             <ol class="artist-list">
@@ -133,20 +158,19 @@
                 <li>50 Cent</li>
             </ol>
         </section>
-        <section id="gallery">
+
+        <!-- Image gallery section -->
+        <section id="gallerys">
             <h2>Image Gallery</h2>
-            <br>
-            <img src="image1.jpg" alt="Description of Image 1">
-            <img src="image2.jpg" alt="Description of Image 2">
-            <!-- Add more images as needed -->
+            <p class="gallery-text">Discover more captivating visuals on my dedicated <a href="image-gallery.html">Gallery page</a>.</p>
         </section>
     </main>
+
+    <!-- Footer section with copyright and back to top link -->
     <footer>
         <small>&copy; 2023 Nat Bitton's <span><a href="index.html">HomePage</a></span></small>
         <a href="index.html"><i class="fas fa-arrow-up"></i></a>
     </footer>
-
-    <script src="index.js"></script>
 </body>
 
 </html>

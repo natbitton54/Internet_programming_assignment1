@@ -5,6 +5,7 @@
      For “Internet Programming” Section 00001 – Fall 2023
 */
 
+/* global styles */
 * {
     padding: 0;
     margin: 0;
@@ -13,6 +14,7 @@
     text-decoration: none;
 }
 
+/* Custom scrollbar styles */
 ::-webkit-scrollbar {
     height: 0;
     width: .5rem;
@@ -27,6 +29,7 @@
     border-radius: 5rem;
 }
 
+/* CSS Variables for easy theming */
 :root {
     --text-color: #f5f5f5f5;
     --hover-color: #12f7ff;
@@ -39,6 +42,7 @@
     --h2-font: 3rem;
 }
 
+/* Base body styles */
 body {
     font-family: "Poppins", sans-serif;
     background-color: var(--bgs-color);
@@ -47,6 +51,8 @@ body {
 }
 
 /* homepage css */
+
+/* Header styles */
 header {
     position: fixed;
     top: 0;
@@ -63,10 +69,12 @@ header {
     transition: background-color 0.3s ease;
 }
 
+/* Ensures header background is visible after scrolling */
 header {
     background-color: #000;
 }
 
+/* Logo styles with gradient and animations */
 .logo {
     display: flex;
     letter-spacing: 1px;
@@ -80,6 +88,7 @@ header {
     cursor: pointer;
 }
 
+/* Navigation list styles */
 .navlist {
     display: flex;
     align-items: center;
@@ -87,6 +96,7 @@ header {
     list-style: none;
 }
 
+/* Navigation link styles with hover effects */
 .navlist a {
     margin-right: 15px;
     color: var(--text-color);
@@ -116,10 +126,12 @@ header {
         0 0 150px rgba(18, 247, 255, 0.6);
 }
 
+/* Section padding */
 section {
     padding: 50px 10%;
 }
 
+/* Personal info section styles */
 #personal-info {
     min-height: 60vh;
     max-width: 100%;
@@ -130,14 +142,17 @@ section {
     margin-top: 50px;
 }
 
+/* Image container styles */
 .personal-info-desc {
     font-weight: normal;
 }
 
+/* Personal info content styles */
 .logo h1 {
     font-weight: bolder;
 }
 
+/* Text styles within personal info content */
 .img-container img {
     border-radius: 50px;
     margin-top: 50px;
@@ -157,6 +172,7 @@ section {
     font-weight: 600;
     font-style: italic;
 }
+
 
 .personal-inf-text h3 {
     display: inline-flex;
@@ -178,6 +194,7 @@ section {
     cursor: default;
 }
 
+/* Info box styles for displaying personal info */
 .info-box {
     display: flex;
     justify-content: space-between;
@@ -235,6 +252,7 @@ section {
 }
 
 
+/* Button box styles */
 .btn-box,
 .btn-boxs {
     display: flex;
@@ -243,6 +261,7 @@ section {
     height: 45px;
 }
 
+/* Styles for individual buttons */
 .btn-box .btn,
 .btn-boxs .btn {
     display: flex;
@@ -297,11 +316,12 @@ section {
     background: var(--hover-color);
 }
 
-/* hobby section & page css */
+/* hobby section page css */
 #hobbies {
     margin-bottom: 30px;
 }
 
+/* Styles for the image row in hobbies section  in homepage, hobby page and gallery */
 .img-row {
     display: flex;
     justify-content: space-around;
@@ -312,12 +332,13 @@ section {
 
 .img-row img {
     width: 100%;
-    margin: 5px;
+    margin: 15px;
     max-width: 400px;
     height: 350px;
     border-radius: 15px;
 }
 
+/* Container styles for each hobby */
 .hobby-conatiner {
     text-align: center;
     margin-top: 50px;
@@ -344,6 +365,7 @@ section {
     color: #fff;
 }
 
+/* Styles for the image container within the hobbies */
 .img-contain {
     cursor: pointer;
 }
@@ -361,10 +383,12 @@ section {
 
 .img-contain img:hover {
     transform: scale(1.1);
+    transition: transform 0.3s ease;
     animation: rainbowRave 3s linear infinite;
 }
 
 /* fav links css */
+/* Styles for favorite links section */
 #favorite-links {
     font-family: 'Arial', sans-serif;
     color: #fff;
@@ -434,6 +458,7 @@ section {
     padding-bottom: 5px;
 }
 
+/* Styles for blockquotes in favorite quotes section */
 blockquote {
     font-family: 'Arial', sans-serif;
     font-style: italic;
@@ -445,12 +470,14 @@ blockquote {
 }
 
 /* fav artist css */
+/* Styles for the list of artists */
 .artist-list {
     margin-top: 20px;
     padding-left: 0;
     list-style-position: inside;
     list-style-type: disc;
     font-family: 'Arial', sans-serif;
+    color: #aaa;
 }
 
 .artist-list li {
@@ -472,7 +499,8 @@ blockquote {
 }
 
 /* image gallery */
-#gallery h2 {
+/* Gallery styles */
+#gallerys h2 {
     color: #aaa;
     border-bottom: 2px solid #444;
     display: inline-block;
@@ -480,8 +508,18 @@ blockquote {
     padding-bottom: 5px;
 }
 
+.gallery-text {
+    color: #aaa;
+    margin-left: 10px;
+}
+
+.gallery-text a {
+    color: #12f7ff;
+}
+
 
 /* footer */
+/* Footer styles */
 footer {
     padding: 1.5rem 5%;
     display: flex;
@@ -533,7 +571,7 @@ footer a:hover {
 
 /* my hobbies.html page css */
 #hobby {
-    padding: 120px 10%;
+    padding: 140px 10%;
 }
 
 #hobby h1 {
@@ -541,7 +579,7 @@ footer a:hover {
     font-size: 30px;
     margin-bottom: 1rem;
     display: inline-block;
-    border-bottom: 1px solid #12f7ff;
+    border-bottom: 2px solid #12f7ff;
 }
 
 #hobby p {
@@ -555,7 +593,33 @@ footer a:hover {
     color: #fff;
 }
 
+/* my image gallery html page */
+.image-gallery-footer {
+    width: 100%;
+}
 
+#gallery {
+    padding: 140px 10%;
+}
+
+.gallery-h2 {
+    display: inline-block;
+    border-bottom: 2px solid #12f7ff;
+    color: #12f7ff;
+}
+
+#gallery p {
+    margin-top: 20px;
+    margin-left: 15px;
+
+    color: #aaa;
+}
+
+#gallery p:active {
+    color: #fff;
+}  
+
+/* media query for responsiveness on smaller screens*/
 @media screen and (max-width: 1300px) {
     .img-container {
         display: none;
@@ -581,9 +645,10 @@ footer a:hover {
         padding: 5%;
         /* Reduces padding */
     }
+    
 
     #personal-info {
-        padding: 140px 0;
+        padding: 180px 0;
     }
 
     /* Ensures images are fully responsive */
@@ -591,7 +656,14 @@ footer a:hover {
     .img-contain img {
         max-width: 100%;
         height: auto;
+        margin: auto;
+        margin-top: 20px;
     }
+
+    .img-contain img:hover {
+        transform: scale(1);
+    }
+
 
     /* Adjusts navigation for smaller screens */
     .navlist {
@@ -653,10 +725,6 @@ footer a:hover {
         align-items: center;
     }
 
-    .img-row:hover {
-        transform: scale(.9);
-    }
-
     footer {
         border-top: 1px solid #000;
         width: 100%;
@@ -672,8 +740,7 @@ footer a:hover {
 }
 
 
-/* keyframes animations */
-
+/* Animation keyframes */
 @keyframes rainbowRave {
     0% {
         box-shadow: 2px 5px 25px #FF0000;
@@ -712,6 +779,7 @@ footer a:hover {
     /* Violet */
 }
 
+/* Other keyframes animations... */
 @keyframes morph {
 
     0%,
